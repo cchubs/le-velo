@@ -413,3 +413,42 @@ text-align:center;
 #detailChecklist li { margin: 2px 0 !important; }
 #detailChecklist h3 { margin: 10px 0 6px !important; }
 #detailChecklist p  { margin: 6px 0 10px !important; }
+
+/* ========= MOBILE BOOST (iPhone) ========= */
+@media (max-width: 700px) {
+  .view {
+    max-width: none;     /* não limita em mobile */
+    padding: 14px 14px 28px;
+  }
+
+  .menu-btn {
+    padding: 14px 16px;  /* caixas mais altas */
+    font-size: 15px;     /* texto maior */
+    border-radius: 14px;
+  }
+
+  .result-item,
+  .search-result-item {
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+
+  /* Botão voltar com área de toque real */
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    padding: 12px 10px;   /* aumenta o “hit area” */
+    margin: 4px 0 6px;
+    border-radius: 10px;
+  }
+
+  #searchInput {
+    font-size: 15px;
+    padding: 12px 16px;
+  }
+
+  .header-title h1 { font-size: 20px; }
+  .header-title h2 { font-size: 13px; }
+}
