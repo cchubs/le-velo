@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Manual Digital - Espaço Le Vélo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HOME -->
+  <div id="homeView" class="view">
+
+    <!-- Título + subtítulo -->
+    <header class="header-title">
+      <div>
+        <h1>Espaço Le Vélo</h1>
+        <h2>Estação Italiana</h2>
+      </div>
+    </header>
+
+    <!-- Busca -->
+    <div class="search-row">
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Buscar insumos, preparos ou pratos"
+      />
+    </div>
+
+    <!-- RESULTADOS DE BUSCA EM TEMPO REAL (NA HOME) -->
+    <ul id="searchResults" class="search-results hidden"></ul>
+
+    <!-- MENU EM BLOCOS -->
+
+    <!-- 1) SEMANA | ATALHOS -->
+    <div class="menu-row-two">
+      <button class="menu-btn" data-section="semana">SEMANA</button>
+      <button class="menu-btn" data-section="atalhos">ATALHOS</button>
+    </div>
+
+    <!-- 2) INSUMOS / PRÉ-PREPAROS / PREPAROS / BOQUETA -->
+    <div class="menu-column-full">
+      <button class="menu-btn full" data-section="insumos">INSUMOS</button>
+      <button class="menu-btn full" data-section="pre-preparos">PRODUÇÃO</button>
+      <button class="menu-btn full" data-section="preparos">PRATOS</button>
+      <button class="menu-btn full" data-section="boqueta">BOQUETA</button>
+    </div>
+
+    <!-- 3) EQUIPAMENTOS | CARDÁPIO -->
+    <div class="menu-row-two">
+      <button class="menu-btn" data-section="equipamentos">EQUIPAMENTOS</button>
+      <button class="menu-btn" data-section="cardapio">CARDÁPIO</button>
+    </div>
+
+    <!-- 4) ATALHOS | OUTRAS INFOS -->
+    <div class="menu-row-two">
+      <button class="menu-btn" data-section="outras-infos">OUTRAS INFOS</button>
+    </div>
+
+    <!-- Linha de ajuda + “Ingredientes” -->
+    <div class="home-footer-row">
+      <p class="hint">
+        Toque em uma área ou use a busca para achar insumos rapidamente.
+      </p>
+    </div>
+  </div>
+
+  <!-- LISTA (segunda página) -->
+  <div id="listView" class="view hidden">
+    <button id="backBtn" class="back-btn">← Voltar</button>
+    <h2 id="listTitle"></h2>
+    <ul id="resultsList"></ul>
+  </div>
+
+  <!-- DETALHE (terceira página) -->
+  <div id="detailView" class="view hidden">
+    <button id="detailBackBtn" class="back-btn">← Voltar</button>
+
+    <h2 id="detailTitle"></h2>
+    <p id="detailSubtitle" class="detail-subtitle"></p>
+    <p id="detailMeta" class="detail-meta"></p>
+
+    <div id="detailIngredientsBlock" class="detail-block hidden">
+      <h3>Ingredientes</h3>
+      <ul id="detailIngredients"></ul>
+    </div>
+
+    <div id="detailModoBlock" class="detail-block hidden">
+
+  <div class="tab-bar">
+    <button onclick="showTab('modo')" class="tab active" id="tabModo">MODO</button>
+    <button onclick="showTab('pccs')" class="tab" id="tabPccs">PCCs</button>
+    <button onclick="showTab('armazenamento')" class="tab" id="tabArma">ARMAZENAMENTO</button>
+<button onclick="showTab('checklist')" class="tab hidden" id="tabChecklist">CHECKLIST</button>
+
+  </div>
+
+  <div id="detailModo" class="detail-tab"></div>
+  <div id="detailPccs" class="detail-tab hidden"></div>
+  <div id="detailArmazenamento" class="detail-tab hidden"></div>
+<div id="detailChecklist" class="detail-tab hidden"></div>
+
+
+</div>
+
+
+    <div id="detailObsBlock" class="detail-block hidden">
+      <h3>Observações</h3>
+      <p id="detailObs"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
