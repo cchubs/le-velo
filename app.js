@@ -3285,7 +3285,16 @@ Guardar junto.`}
 // CARDÁPIO
 
 const CARDAPIO = [
-  {
+{
+    id: "car_penne_camarao",
+    tipo: "CARDAPIO",
+    nome: "Penne ao Molho de Parmesão com Mostarda Dijon e Mel com Camarões Crocantes",
+    categoria: "Massas da casa",
+    observacoes:
+
+"Penne feito em casa, servido ao molho de parmesão com mostarda e mel, finalizado com camarões crocantes, pimenta-do-reino e tomilho."
+   
+  }, {
     id: "car_gnocchi_cordeiro",
     tipo: "CARDAPIO",
     nome: "Gnocchi na Manteiga com Ragu de Cordeiro",
@@ -4078,6 +4087,7 @@ function showTab(tab) {
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
+
 
 
 
