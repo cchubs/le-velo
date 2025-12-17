@@ -890,7 +890,18 @@ Guarde em recipiente hermético, com papel-toalha para absorver umidade.`
     { nome: "Noz-moscada", qtd: "0,02 kg" }
   ],
 
-  modo: `kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk` 
+  modo: `
+
+Em uma panela, derreta a manteiga com o azeite e doure levemente o alho.
+
+Adicione o creme de leite e mexa em fogo baixo até aquecer.
+
+Acrescente o parmesão e mexa até engrossar.
+
+Misture a mostarda dijon e o mel, ajustando o equilíbrio entre o salgado e o adocicado.
+
+Tempere com sal, pimenta e noz-moscada (se desejar).
+` 
 },
 
  {
@@ -4068,4 +4079,5 @@ function showTab(tab) {
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
+
 
