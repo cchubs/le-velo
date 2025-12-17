@@ -877,15 +877,14 @@ Guarde em recipiente hermético, com papel-toalha para absorver umidade.`
   categoria: "Molhos Base",
 
   ingredientes: [
-    { nome: "Manteiga", qtd: "0,200 kg" },
+    { nome: "Manteiga", qtd: "0,2 kg" },
     { nome: "Azeite", qtd: "0,05 kg" },
     { nome: "Alho picado", qtd: "0,06 kg" },
     { nome: "Creme de leite", qtd: "1,5 kg" },
 	  { nome: "Nata", qtd: "0,5 kg" },
     { nome: "Mostarda", qtd: "0,08 kg" },
     { nome: "Mel", qtd: "0,08 kg" },
-    { nome: "Sal, qtd: "0,02 kg" },
-	  
+    { nome: "Sal", qtd: "0,02 kg" },
     { nome: "Pimenta-do-reino", qtd: "0,02 kg" },
     { nome: "Noz-moscada", qtd: "0,02 kg" }
   ],
@@ -4079,5 +4078,6 @@ function showTab(tab) {
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
+
 
 
