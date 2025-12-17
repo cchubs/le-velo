@@ -870,6 +870,28 @@ Deixe esfriar completamente antes de armazenar.
 
 Guarde em recipiente hermético, com papel-toalha para absorver umidade.` 
 },
+	{
+  id: "prod_molho_parmesao_mostarda_mel",
+  tipo: "PRODUCAO",
+  nome: "Molho de parmesão com Mostarda e Mel - BASE",
+  categoria: "Molhos Base",
+
+  ingredientes: [
+    { nome: "Manteiga", qtd: "0,200 kg" },
+    { nome: "Azeite", qtd: "0,05 kg" },
+    { nome: "Alho picado", qtd: "0,06 kg" },
+    { nome: "Creme de leite", qtd: "1,5 kg" },
+	  { nome: "Nata", qtd: "0,5 kg" },
+    { nome: "Mostarda", qtd: "0,08 kg" },
+    { nome: "Mel", qtd: "0,08 kg" },
+    { nome: "Sal, qtd: "0,02 kg" },
+	  
+    { nome: "Pimenta-do-reino", qtd: "0,02 kg" },
+    { nome: "Noz-moscada", qtd: "0,02 kg" }
+  ],
+
+  modo: `kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk` 
+},
 
  {
   id: "prod_parma crocante",
@@ -2278,6 +2300,47 @@ Prove e acerte o sal do ragu, se necessário.
 Sirva o gnocchi no fundo do prato, disponha o ragu por cima e finalize com azeite de manjericão, cebolete e flores.
 
 Pode ser sem lactose: ao invés de saltear na manteiga, use azeite extravirgem.`
+   
+  },
+	{
+    nome: "Penne ao Molho de Parmesão com Mostarda Dijon e Mel com Camarões Crocantes",
+tipo: "PRATOS",
+    tempo: "15 minutos",
+    rendimento: "1 porção",
+tags: ["com_gluten", "com_pimenta", "nao_vegano", "carne_vermelha", "com_carne", "com_lactose", "pode_ser_vegetariano"],
+    ingredientes: [
+      { nome: "Penne", qtd: "0,18 kg" },
+      { nome: "Molho de Parmesão - BASE", qtd: "0,2 kg" },
+      { nome: "Parmesão", qtd: "0,03 kg" },
+      { nome: "7 camarões", qtd: "0,005 kg" },
+    	{ nome: "Suco de limão siciliano", qtd: "0,007 kg" },
+      { nome: "1 ovo inteiro", qtd: "0,05 kg" },
+      { nome: "Tomilho", qtd: "0,001 kg" },
+      { nome: "Farinha de trigo", qtd: "1 un" } ,		
+		{ nome: "Farinha panko", qtd: "1 un" } ,
+		{ nome: "Raspas de limão", qtd: "1 un" } ,
+		{ nome: "Pimenta-do-reino", qtd: "0,001 kg" },
+      { nome: "Tomilho", qtd: "0,001 kg" },
+      { nome: "Flores", qtd: "1 un" }
+    ],
+ modo: `Camarões crocantes
+Tempere os camarões com sal, pimenta e suco de limão.
+
+Passe-os na farinha de trigo, depois no ovo batido e por fim na mistura de farinha de rosca + panko.
+
+Aqueça o óleo e frite até dourar (cerca de 2 minutos de cada lado). Escorra em papel toalha.
+
+Reserve e finalize com raspas de limão na hora de servir.
+
+Aqueça uma frigideira levemente, para não queimar o molho.
+
+Adicione Molho de parmesão - BASE, parmesão e mexa até obter.
+
+Ajuste o sal, se necessário.
+
+Sirva o penne centralizado, disponha os camarões por cima e finalize com lascas de parmesão, fio de azeite trufado, pimenta-do-reino e tomilho.
+
+Pode ser vegetariano: o camarão vai na finalização, entõa pode enviar sem.`
    
   },
   {
@@ -4005,3 +4068,4 @@ function showTab(tab) {
 function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
+
